@@ -1,0 +1,22 @@
+{
+  "name": "ecommerce-nestlib-mongo-database",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "private": true,
+  "license": "UNLICENSED",
+  "types": "dist/index",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "nest build && cp package.json dist/",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
+    "prepublish": "npm run build"
+  },
+  "dependencies": {
+    "@nestjs/mongoose": "^10.1.0",
+    "@types/node": "^22.9.0",
+    "mongoose": "^8.8.0",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2"
+  }
+}
